@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-rea",
+  "description": "eslint es6++ config of rea-jet",
+  "main": "index.js",
+  "version": "0.0.0-dev",
+  "scripts": {
+    "test": "eslint index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rea-jet/eslint-config-rea.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "es6"
+  ],
+  "author": "Dennis Sänger <npm-eslint-config-ds82-15@mail.ds82.de>",
+  "contributors": [
+    {"name": "Can Pekesen"}
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^1.9.0"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "./node_modules/.bin/validate-commit-msg && npm test"
+    }
+  },
+  "devDependencies": {
+    "ghooks": "1.0.0",
+    "validate-commit-msg": "1.0.0",
+    "semantic-release": "^4.3.5"
+  }
+}
