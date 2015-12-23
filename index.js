@@ -40,8 +40,5 @@ module.exports = {
     "space-in-parens": [2, "never"],
     "no-multiple-empty-lines": 2,
     "semi-spacing": [2, {"before": false, "after": true}]
-  },
-  "ecmaFeatures": {
-    "modules": true
   }
 };
