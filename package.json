@@ -28,6 +28,9 @@
   "config": {
     "ghooks": {
       "commit-msg": "./node_modules/.bin/validate-commit-msg && npm test"
+    },
+    "validate-commit-msg": {
+      "maxSubjectLength": 60
     }
   },
   "devDependencies": {
