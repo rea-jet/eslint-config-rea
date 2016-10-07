@@ -24,7 +24,8 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "2.5"
+    "eslint": "2.5",
+    "eslint-plugin-jasmine": "1.8.1"
   },
   "config": {
     "ghooks": {
