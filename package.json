@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "eslint": "2.5.3",
+    "eslint-plugin-jasmine": "1.8.1",
     "ghooks": "1.1.1",
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "2.5.0"
