@@ -3,6 +3,13 @@ module.exports = {
     "node": true,
     "es6": true
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
   "globals": {
     "window": false,
     "define": false,
@@ -22,7 +29,6 @@ module.exports = {
     "max-len": [2, 100, 2, {ignoreComments: true, ignoreUrls: true}],
     "no-undef": 2,
     "no-unused-vars": 2,
-    "strict": [2, "global"],
     "operator-linebreak": [2, "after"],
     "no-multi-str": 2,
     "no-mixed-spaces-and-tabs": 2,
