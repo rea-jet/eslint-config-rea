@@ -12,6 +12,7 @@ module.exports = {
   "rules": {
     "max-nested-callbacks": [2, 15], // them its and describes...
     "max-len": [2, 240], // them verbose it statements
+    "jasmine/no-spec-dupes": [1, "branch"]
   },
   "globals": {
     "describe": false,
