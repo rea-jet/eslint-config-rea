@@ -1,17 +1,20 @@
 module.exports = {
   "plugins": [
-    "jasmine",
+    "jasmine"
   ],
   "extends": [
     "rea",
-    "plugin:jasmine/recommended",
+    "plugin:jasmine/recommended"
   ],
   "env": {
-    "jasmine": true,
+    "jasmine": true
   },
   "rules": {
-    "max-nested-callbacks": [2, 15], // them its and describes...
-    "max-len": [2, 240], // them verbose it statements
+    // them its and describes...
+    "max-nested-callbacks": [2, 15],
+
+    // them verbose it statements
+    "max-len": [2, 240],
     "jasmine/no-spec-dupes": [1, "branch"]
   },
   "globals": {
@@ -20,6 +23,6 @@ module.exports = {
     "beforeEach": false,
     "afterEach": false,
     "expect": false,
-    "inject": false,
-  },
+    "inject": false
+  }
 };
