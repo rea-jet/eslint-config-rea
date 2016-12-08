@@ -2,7 +2,7 @@
   "name": "eslint-config-rea",
   "description": "eslint es6++ config of rea-jet",
   "main": "index.js",
-  "version": "1.2.0",
+  "version": "0.0.0-semantic-release",
   "scripts": {
     "test": "eslint index.js test-*.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
