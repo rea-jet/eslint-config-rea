@@ -39,7 +39,7 @@ module.exports = {
     "keyword-spacing": 2,
     "space-infix-ops": 2,
     "space-before-blocks": [2, "always"],
-    "eol-last": 2,
+    "eol-last": [2, "always"],
     "array-bracket-spacing": [2, "never"],
     "object-curly-spacing": [2, "never"],
     "space-in-parens": [2, "never"],
