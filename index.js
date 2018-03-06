@@ -26,7 +26,7 @@ module.exports = {
     "max-params": [2, 4],
     "max-depth": [2, 3],
     "max-statements": [2, 20],
-    "max-len": [2, 100, 2, {ignoreComments: true, ignoreUrls: true}],
+    "max-len": [2, 80, 2, {ignoreComments: true, ignoreUrls: true}],
     "no-undef": 2,
     "no-unused-vars": 2,
     "operator-linebreak": [2, "after"],
