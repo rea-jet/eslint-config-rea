@@ -1,28 +1,28 @@
 module.exports = {
-  "env": {
-    "node": true,
-    "es6": true
+  env: {
+    node: true,
+    es6: true
   },
-  "parserOptions": {
-    "ecmaVersion": 8,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "modules": true
+  parserOptions: {
+    ecmaVersion: 8,
+    sourceType: "module",
+    ecmaFeatures: {
+      modules: true
     }
   },
-  "globals": {
-    "window": false,
-    "define": false,
-    "document": false,
-    "process": false,
-    "console": false,
-    "_t": false,
-    "angular": false
+  globals: {
+    window: false,
+    define: false,
+    document: false,
+    process: false,
+    console: false,
+    _t: false,
+    angular: false
   },
-  "rules": {
-    "curly": [2, "all"],
-    "indent": [2, 2, {"SwitchCase": 1}],
-    "quotes": [2, "single"],
+  rules: {
+    curly: [2, "all"],
+    indent: [2, 2, {SwitchCase: 1}],
+    quotes: [2, "single"],
     "max-params": [2, 4],
     "max-depth": [2, 3],
     "max-statements": [2, 20],
@@ -35,7 +35,7 @@ module.exports = {
     "no-trailing-spaces": 2,
     "space-unary-ops": 2,
     "one-var": [2, {uninitialized: "always", initialized: "never"}],
-    "brace-style": [2, "1tbs", {"allowSingleLine": true}],
+    "brace-style": [2, "1tbs", {allowSingleLine: true}],
     "keyword-spacing": 2,
     "space-infix-ops": 2,
     "space-before-blocks": [2, "always"],
@@ -44,6 +44,6 @@ module.exports = {
     "object-curly-spacing": [2, "never"],
     "space-in-parens": [2, "never"],
     "no-multiple-empty-lines": 2,
-    "semi-spacing": [2, {"before": false, "after": true}]
+    "semi-spacing": [2, {before: false, after: true}]
   }
 };
