@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rea",
-  "description": "eslint es6++ config of rea-jet",
+  "description": "eslint es6++ config for rea-jet projects",
   "main": "index.js",
   "version": "0.0.0-semantic-release",
   "scripts": {
@@ -22,28 +22,20 @@
       "name": "Can Pekesen"
     }
   ],
-  "license": "MIT",
-  "peerDependencies": {
-    "eslint": "3",
-    "eslint-plugin-jasmine": "1.8",
-    "eslint-plugin-mocha": "4.7",
-    "eslint-plugin-protractor": "1.28"
-  },
-  "config": {
-    "ghooks": {
-      "commit-msg": "./node_modules/.bin/validate-commit-msg && npm test"
-    },
-    "validate-commit-msg": {
-      "maxSubjectLength": 60
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
     }
   },
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=3"
+  },
   "devDependencies": {
-    "eslint": "3",
-    "eslint-plugin-jasmine": "1.8",
-    "eslint-plugin-mocha": "4.7",
-    "eslint-plugin-protractor": "1.28",
-    "ghooks": "1.1.1",
-    "semantic-release": "4",
-    "validate-commit-msg": "2.5.0"
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "eslint": "5.8.0",
+    "husky": "1.1.3",
+    "semantic-release": "15"
   }
 }
