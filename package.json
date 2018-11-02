@@ -2,10 +2,11 @@
   "name": "eslint-config-rea",
   "description": "eslint es6++ config for rea-jet projects",
   "main": "index.js",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-development",
   "scripts": {
     "test": "eslint index.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "@commitlint/config-conventional": "7.1.2",
     "eslint": "5.8.0",
     "husky": "1.1.3",
-    "semantic-release": "15"
+    "semantic-release": "^15.10.6",
+    "travis-deploy-once": "^5.0.9"
   }
 }

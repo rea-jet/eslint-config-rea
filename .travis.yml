@@ -1,15 +1,16 @@
-sudo: false
 language: node_js
+cache:
+  directories:
+    - ~/.npm
 notifications:
   email: false
 node_js:
-  - '6'
-  - '8'
   - '10'
-before_script:
-  - npm prune
+  - '9'
+  - '8'
+  - '6'
 after_success:
-  - npm run semantic-release
+  - npm run travis-deploy-once "npm run semantic-release"
 branches:
   except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"
+    - /^v\d+\.\d+\.\d+$/
