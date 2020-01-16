@@ -1,14 +1,14 @@
 module.exports = {
   env: {
     node: true,
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 8,
     sourceType: 'module',
     ecmaFeatures: {
-      modules: true
-    }
+      modules: true,
+    },
   },
   globals: {
     window: false,
@@ -17,7 +17,7 @@ module.exports = {
     process: false,
     console: false,
     _t: false,
-    angular: false
+    angular: false,
   },
   rules: {
     'array-bracket-spacing': [2, 'never'],
@@ -25,8 +25,8 @@ module.exports = {
       2,
       '1tbs',
       {
-        allowSingleLine: true
-      }
+        allowSingleLine: true,
+      },
     ],
     'comma-dangle': ['error', 'always-multiline'],
     curly: [2, 'all'],
@@ -35,8 +35,8 @@ module.exports = {
       2,
       2,
       {
-        SwitchCase: 1
-      }
+        SwitchCase: 1,
+      },
     ],
     'keyword-spacing': 2,
     'max-depth': [2, 3],
@@ -49,8 +49,8 @@ module.exports = {
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
-        ignoreUrls: true
-      }
+        ignoreUrls: true,
+      },
     ],
     'max-params': [2, 4],
     'max-statements': [2, 20],
@@ -65,8 +65,8 @@ module.exports = {
       2,
       {
         initialized: 'never',
-        uninitialized: 'always'
-      }
+        uninitialized: 'always',
+      },
     ],
     'operator-linebreak': [2, 'after'],
     quotes: [2, 'single'],
@@ -74,12 +74,12 @@ module.exports = {
       2,
       {
         after: true,
-        before: false
-      }
+        before: false,
+      },
     ],
     'space-before-blocks': [2, 'always'],
     'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
-    'space-unary-ops': 2
-  }
+    'space-unary-ops': 2,
+  },
 };
