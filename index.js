@@ -20,41 +20,65 @@ module.exports = {
     angular: false
   },
   rules: {
+    'array-bracket-spacing': [2, 'never'],
+    'brace-style': [
+      2,
+      '1tbs',
+      {
+        allowSingleLine: true
+      }
+    ],
     curly: [2, 'all'],
-    indent: [2, 2, { SwitchCase: 1 }],
-    quotes: [2, 'single'],
-    'max-params': [2, 4],
+    'eol-last': [2, 'always'],
+    indent: [
+      2,
+      2,
+      {
+        SwitchCase: 1
+      }
+    ],
+    'keyword-spacing': 2,
     'max-depth': [2, 3],
-    'max-statements': [2, 20],
     'max-len': [
       2,
       100,
       2,
       {
         ignoreComments: true,
-        ignoreUrls: true,
+        ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true
+        ignoreUrls: true
       }
     ],
+    'max-params': [2, 4],
+    'max-statements': [2, 20],
+    'no-mixed-spaces-and-tabs': 2,
+    'no-multi-str': 2,
+    'no-multiple-empty-lines': 2,
+    'no-trailing-spaces': 2,
     'no-undef': 2,
     'no-unused-vars': 2,
-    'operator-linebreak': [2, 'after'],
-    'no-multi-str': 2,
-    'no-mixed-spaces-and-tabs': 2,
-    'no-trailing-spaces': 2,
-    'space-unary-ops': 2,
-    'one-var': [2, { uninitialized: 'always', initialized: 'never' }],
-    'brace-style': [2, '1tbs', { allowSingleLine: true }],
-    'keyword-spacing': 2,
-    'space-infix-ops': 2,
-    'space-before-blocks': [2, 'always'],
-    'eol-last': [2, 'always'],
-    'array-bracket-spacing': [2, 'never'],
     'object-curly-spacing': [2, 'always'],
+    'one-var': [
+      2,
+      {
+        initialized: 'never',
+        uninitialized: 'always'
+      }
+    ],
+    'operator-linebreak': [2, 'after'],
+    quotes: [2, 'single'],
+    'semi-spacing': [
+      2,
+      {
+        after: true,
+        before: false
+      }
+    ],
+    'space-before-blocks': [2, 'always'],
     'space-in-parens': [2, 'never'],
-    'no-multiple-empty-lines': 2,
-    'semi-spacing': [2, { before: false, after: true }]
+    'space-infix-ops': 2,
+    'space-unary-ops': 2
   }
 };
