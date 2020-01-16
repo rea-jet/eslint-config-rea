@@ -28,6 +28,7 @@ module.exports = {
         allowSingleLine: true
       }
     ],
+    'comma-dangle': ['error', 'always-multiline'],
     curly: [2, 'all'],
     'eol-last': [2, 'always'],
     indent: [
